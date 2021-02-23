@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     $('#model option').hide();
     $(`#model option[data="${$('#brand option:selected').val()}"]`).show();
+    // '#model option[data="renault"]'
     
     $('#brand').on('change', function() {
         // Retrieve the car brand

@@ -7,19 +7,33 @@
     <title>JQuery Course</title>
 </head>
 <body>
-    <p class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    </p>
-    <p class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Cras mauris nulla, finibus sed suscipit non, pellentesque ac tellus. 
-        Vestibulum aliquet, ante in maximus faucibus, lectus risus ullamcorper purus, 
-        a elementum massa risus eu justo. Duis enim elit, tristique a nunc eu, tempus elementum mauris.
-    </p>
-    <p class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        a elementum massa risus eu justo. Duis enim elit, tristique a nunc eu, tempus elementum mauris.
-    </p>
+   
+
+    <form name="formulaire" action="target.php">
+
+        <p><label for="marque">Marque ?</label><br /></p>
+            <select name="marque" id="marqueID">
+                <option value="peugeot">Peugeot</option>
+                <option value="renault">Renault</option>
+                <option value="volkswagen">Volkswagen</option>
+            </select>
+        <p><label for="modele">Modèle</label><br /></p>
+            <select name="modele" id="modele">
+                <option id="modele1" value="peugeotTest1" data="peugeot">PeugeotTest1</option>
+                <option id="modele1" value="peugeotTest2" data="peugeot">PeugeotTest2</option>
+                <option id="modele1" value="peugeotTest3" data="peugeot">PeugeotTest3</option>
+                <option id="modele2" value="renaultTest1" data="renault">RenaultTest1</option>
+                <option id="modele2" value="renaultTest2" data="renault">RenaultTest2</option>
+                <option id="modele2" value="renaultTest3" data="renault">RenaultTest3</option>
+                <option id="modele3" value="volkswagenTest1" data="volkswagen">VolkswagenTest1</option>
+                <option id="modele3" value="volkswagenTest2" data="volkswagen">VolkswagenTest2</option>
+                <option id="modele3" value="volkswagenTest3" data="volkswagen">Polo V</option>
+            </select>
+            <button class="favorite styled" type="submit">Envoyer</button>
+      </form>
+
+      <p id="text"></p>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/sandbox.js"></script>
